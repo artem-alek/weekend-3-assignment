@@ -2,3 +2,68 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.clear {
+  clear: both; }
+
+.clearfix {
+  overflow: auto; }
+
+.header {
+  height: 100px;
+  background-color: #FFFFFF; }
+  .header ul li {
+    display: inline-block; }
+
+body {
+  background-color: #FAF9F5; }
+
+.menu {
+  height: 50px;
+  background-color: #FFFFFF; }
+  .menu ul li {
+    display: inline-block;
+    list-style: none; }
+
+.sideBar {
+  background-color: #FFFFFF;
+  width: 25%; }
+  .sideBar ul li {
+    list-style: none; }
+
+.productsCont {
+  width: 75%; }
+  .productsCont .product {
+    width: 201px;
+    border: 1px solid lightgrey;
+    display: inline-block;
+    margin: 5px 2.5px 5px 2.5px;
+    background-color: #FFFFFF; }
+    .productsCont .product p {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 10px; }
+  .productsCont .pImage {
+    width: 199px;
+    overflow: auto; }
+    .productsCont .pImage img {
+      width: 199px; }
+
+.footerMenu {
+  margin-left: 25%; }
+  .footerMenu ul {
+    display: inline-block;
+    list-style: none; }
+
+.lookingShops {
+  margin-left: 25%; }
+
+.pageNum {
+  margin-left: 25%; }
