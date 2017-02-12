@@ -20,22 +20,58 @@
 
 .header {
   height: 100px;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  border-bottom: 1px solid lightgrey; }
   .header ul li {
     display: inline-block; }
   .header .logo {
     color: #E56D2C;
     font-size: 30px; }
+  .header .searchbar {
+    height: 25px; }
+  .header input {
+    height: 27px;
+    width: 315px;
+    margin-left: 10px; }
+  .header .searchButton {
+    margin-left: -5px; }
+  .header button {
+    background: #5DAFC8;
+    color: white;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    font-size: 12px;
+    padding: 5px;
+    width: 64px;
+    height: 24px;
+    border: 1px solid #5DAFC8; }
+
+.rightHeader {
+  margin-right: 3.5%; }
+  .rightHeader .signIn {
+    border: 2px solid #5DAFC8;
+    border-radius: 2px; }
+  .rightHeader ul {
+    padding: 0px; }
+    .rightHeader ul li {
+      margin-left: 19px;
+      font-size: 12px; }
 
 body {
   background-color: #FAF9F5; }
 
 .menu {
   height: 50px;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  overflow: auto;
+  border-top: 1px solid lightgrey; }
+  .menu ul {
+    margin: 7px 0px; }
   .menu ul li {
     display: inline-block;
-    list-style: none; }
+    list-style: none;
+    font-size: 12px;
+    margin: 0px 10px 0px 0px; }
 
 .resultsInfo {
   width: 25%;

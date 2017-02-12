@@ -27,6 +27,7 @@
 .header {
   height: 100px;
   background-color: #FFFFFF;
+  border-bottom: 1px solid lightgrey;
 
   ul li {
     display: inline-block;
@@ -35,6 +36,50 @@
   .logo {
     color: #E56D2C;
     font-size: 30px;
+  }
+
+  .searchbar {
+    height: 25px;
+  }
+
+    input {
+      height: 27px;
+      width: 315px;
+      margin-left: 10px;
+    }
+
+  .searchButton {
+    margin-left: -5px;
+}
+    button {
+      background: #5DAFC8;
+      color: white;
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px;
+      font-size: 12px;
+      padding: 5px;
+      width: 64px;
+      height: 24px;
+      border: 1px solid #5DAFC8;
+    }
+
+}
+
+.rightHeader {
+  margin-right: 3.5%;
+
+  .signIn {
+    border: 2px solid #5DAFC8;
+    border-radius: 2px
+  }
+
+  ul {
+    padding: 0px;
+
+    li {
+      margin-left: 19px;
+      font-size: 12px;
+    }
   }
 }
 
@@ -45,10 +90,18 @@ body {
 .menu {
   height: 50px;
   background-color: #FFFFFF;
+  overflow: auto;
+  border-top: 1px solid lightgrey;
+
+  ul {
+    margin: 7px 0px;
+  }
 
   ul li {
     display: inline-block;
     list-style: none;
+    font-size: 12px;
+    margin: 0px 10px 0px 0px;
   }
 }
 
