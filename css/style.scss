@@ -2,6 +2,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+
   a {
     text-decoration: none;
     color: unset;
@@ -51,6 +52,7 @@
   .searchButton {
     margin-left: -5px;
 }
+
     button {
       background: #5DAFC8;
       color: white;
@@ -113,6 +115,7 @@ body {
   ul {
     padding: 0px;
   }
+
   li {
     list-style: none;
   }
@@ -133,9 +136,14 @@ body {
 .sideBar {
   background-color: #FFFFFF;
   width: 25%;
+
   ul li {
     list-style: none;
   }
+}
+
+.product[title]:hover:after {
+  z-index: -1;
 }
 
 .productsCont {
@@ -148,12 +156,34 @@ body {
     display: inline-block;
     margin: 5px 2.5px 5px 2.5px;
     background-color: #FFFFFF;
+    position: relative;
+
+    .icon1 {
+      width: 20px;
+      float: right;
+      margin-left: 150px;
+      margin-top: 5px;
+      position: absolute;
+      visibility: hidden;
+    }
+
+    .icon2 {
+      width: 20px;
+      float: right;
+      margin-left: 175px;
+      margin-top: 5px;
+      position: absolute;
+      visibility: hidden;
+
+    }
+
     p {
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
       font-size: 10px;
     }
+
     .price {
       color: #88BE55;
     }
@@ -169,6 +199,7 @@ body {
   }
 
 }
+
 
 .footerMenu {
   margin-left: 25%;

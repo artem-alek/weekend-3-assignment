@@ -97,6 +97,9 @@ body {
   .sideBar ul li {
     list-style: none; }
 
+.product[title]:hover:after {
+  z-index: -1; }
+
 .productsCont {
   width: 75%;
   padding: 0px 5%; }
@@ -105,7 +108,22 @@ body {
     border: 1px solid lightgrey;
     display: inline-block;
     margin: 5px 2.5px 5px 2.5px;
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+    position: relative; }
+    .productsCont .product .icon1 {
+      width: 20px;
+      float: right;
+      margin-left: 150px;
+      margin-top: 5px;
+      position: absolute;
+      visibility: hidden; }
+    .productsCont .product .icon2 {
+      width: 20px;
+      float: right;
+      margin-left: 175px;
+      margin-top: 5px;
+      position: absolute;
+      visibility: hidden; }
     .productsCont .product p {
       text-overflow: ellipsis;
       overflow: hidden;

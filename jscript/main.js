@@ -10,7 +10,9 @@
 
 function createBox (x) {
   return `
-          <div class='product'>
+          <div class='product' title='${x.title}'>
+            <a href="#"> <img class='icon1' src='images/heart.png'/></a>
+            <a href='#'> <img class='icon2' src='images/hamburger.png'/></a>
             <div class="pImage">
               <img src='${x.Images[0].url_170x135}'/>
             </div>
@@ -26,7 +28,13 @@ function makeTemplate () {
     var result = etsyData.results[i];
     var makeHtml = createBox(result);
     $('.productsCont').append(makeHtml);
+    hoverOn();
+
   }
 }
 
+function hoverOn () {
+  $('.product').hover(function (x) { $(this).find('.icon1').css('visibility', 'visible') }, function (x) { $(this).find('.icon1').css('visibility', 'hidden') } );
+  $('.product').hover(function (x) { $(this).find('.icon2').css('visibility', 'visible') }, function (x) { $(this).find('.icon2').css('visibility', 'hidden') });
+}
 makeTemplate();
