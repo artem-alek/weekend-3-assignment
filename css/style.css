@@ -48,7 +48,7 @@
 
 .rightHeader {
   margin-right: 3.5%; }
-  .rightHeader .signIn {
+  .rightHeader .signIn li {
     border: 2px solid #5DAFC8;
     border-radius: 2px; }
   .rightHeader ul {
